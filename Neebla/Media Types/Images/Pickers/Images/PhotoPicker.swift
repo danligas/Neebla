@@ -81,7 +81,7 @@ struct PhotoPicker: UIViewControllerRepresentable {
             
             logger.debug("results: \(results)")
             
-            let alert = UIAlertController(title: "Add image?", message: "Is this the image you to add to album?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Add image?", message: "Is this the image you want to add to this album?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { _ in
                 self.addImage(result: results[0])
             }))
